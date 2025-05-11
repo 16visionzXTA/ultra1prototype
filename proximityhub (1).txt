@@ -1,0 +1,1483 @@
+local player = game:GetService("Players").LocalPlayer
+local screenGui = Instance.new("ScreenGui")
+screenGui.Name = "VisionOverlay"
+screenGui.ResetOnSpawn = false
+screenGui.Parent = player:WaitForChild("PlayerGui")
+
+local textLabel = Instance.new("TextLabel")
+textLabel.Size = UDim2.new(1, 0, 1, 0)
+textLabel.Position = UDim2.new(0, 0, 0, 0)
+textLabel.BackgroundTransparency = 1
+textLabel.Text = "Thank You For Using Proximity Hub!"
+textLabel.TextColor3 = Color3.new(1, 1, 1)
+textLabel.TextStrokeTransparency = 0
+textLabel.TextScaled = true
+textLabel.Font = Enum.Font.SourceSansBold
+textLabel.Parent = screenGui
+
+wait(2)
+screenGui:Destroy()
+
+-- Load Rayfield UI Library
+local Rayfield = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
+
+-- Create Window
+local Window = Rayfield:CreateWindow({
+    Name = "Proximity Hub [U1]",
+    LoadingTitle = "Proximity Ultra 1",
+    LoadingSubtitle = "By 16visionzX",
+    
+Theme = {
+        TextColor = Color3.fromRGB(30, 30, 30), -- Dark Gray Text
+    Background = Color3.fromRGB(240, 240, 240), -- Light Gray Background
+    Topbar = Color3.fromRGB(220, 220, 220), -- Light Gray
+    Shadow = Color3.fromRGB(200, 200, 200), -- Softer Shadow
+    NotificationBackground = Color3.fromRGB(235, 235, 235),
+    NotificationActionsBackground = Color3.fromRGB(255, 255, 255), -- Pure White
+    TabBackground = Color3.fromRGB(230, 230, 230),
+    TabStroke = Color3.fromRGB(200, 200, 200),
+    TabBackgroundSelected = Color3.fromRGB(255, 255, 255), -- White
+    TabTextColor = Color3.fromRGB(50, 50, 50),
+    SelectedTabTextColor = Color3.fromRGB(0, 0, 0), -- Black for contrast
+    ElementBackground = Color3.fromRGB(245, 245, 245),
+    ElementBackgroundHover = Color3.fromRGB(255, 255, 255),
+    SecondaryElementBackground = Color3.fromRGB(230, 230, 230),
+    ElementStroke = Color3.fromRGB(180, 180, 180),
+    SecondaryElementStroke = Color3.fromRGB(160, 160, 160),
+    SliderBackground = Color3.fromRGB(210, 210, 210), -- Gray Slider
+    SliderProgress = Color3.fromRGB(100, 100, 100), -- Dark Gray Progress
+    SliderStroke = Color3.fromRGB(180, 180, 180),
+    ToggleBackground = Color3.fromRGB(220, 220, 220),
+    ToggleEnabled = Color3.fromRGB(255, 255, 255), -- White Toggle
+    ToggleDisabled = Color3.fromRGB(180, 180, 180),
+    ToggleEnabledStroke = Color3.fromRGB(150, 150, 150),
+    ToggleDisabledStroke = Color3.fromRGB(120, 120, 120),
+    ToggleEnabledOuterStroke = Color3.fromRGB(200, 200, 200),
+    ToggleDisabledOuterStroke = Color3.fromRGB(170, 170, 170),
+    DropdownSelected = Color3.fromRGB(250, 250, 250),
+    DropdownUnselected = Color3.fromRGB(230, 230, 230),
+    InputBackground = Color3.fromRGB(255, 255, 255),
+    InputStroke = Color3.fromRGB(180, 180, 180),
+    PlaceholderColor = Color3.fromRGB(150, 150, 150) -- Medium Gray Placeholder
+},
+    ConfigurationSaving = {
+        Enabled = false,
+    },
+    KeySystem = true,
+    KeySettings = {
+        Title = "Proximity",
+        Subtitle = "Enter Key to Continue",
+        Note = "The key is where you got it from the owner. -16visionzX",
+        FileName = "Proxiz",
+        SaveKey = true,
+        GrabKeyFromSite = false,
+        Key = "WafflesProxi"
+    }
+})
+
+-- Create Main | Credits Tab
+local MainTab = Window:CreateTab("Main | Credits", "Home")
+
+-- Add Labels to Main | Credits Tab
+MainTab:CreateLabel("Welcome To Proximity Hub!")
+MainTab:CreateLabel("Credits to: GodofLove076 | 16visionzX, influxusreel_1 | FancyKid")
+MainTab:CreateLabel("━━━━━━━━━━━━━━━━━━━━━━")
+MainTab:CreateLabel("Tiktok: exotechv | Fancykid's TT: not_fancykid")
+MainTab:CreateLabel("Extra Credits to FancyKid!")
+MainTab:CreateLabel("Thank You For Using This Script!")
+MainTab:CreateLabel(" VisionR9 ")
+MainTab:CreateLabel(" Thanks for buying this Hub! ")
+
+
+local UpdateTab = Window:CreateTab("Update Logs", "scroll")
+
+UpdateTab:CreateLabel("-- Update Logs! --")
+UpdateTab:CreateLabel("-- Ultra 1 --")
+UpdateTab:CreateLabel("Extra Scripts Added!")
+UpdateTab:CreateLabel("Deleted some scripts.")
+UpdateTab:CreateLabel("Turned the buttons to tab back to buttons!")
+UpdateTab:CreateLabel("New Sections!")
+UpdateTab:CreateLabel("Placed all gun scripts to a new section.")
+UpdateTab:CreateLabel("Some Scripts from Fancykid")
+
+-- Create Scripts Tab (Second Tab)
+local ScriptsTab = Window:CreateTab("Scripts", "square-chevron-right")  
+
+local ScriptsSection = ScriptsTab:CreateSection("Scripts")
+
+ScriptsTab:CreateButton({
+    Name = " Galaxy Titan",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/TEST19983/Reslasjd/refs/heads/main/attac"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Robot Machine",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://pastefy.app/ur8n4dc6/raw",true))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Titan Absolm",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/dEE5vZtu"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "External GUI [Password: team anonymous]",
+    Interact = 'Click',
+    Callback = function()
+
+loadstring(game:HttpGet("https://pastefy.app/4GLMKcft/raw"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Polaria [Scripts Doesn't Work.]",
+    Interact = 'Click',
+    Callback = function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/gitezgitgit/Polaria/refs/heads/main/RealPolaria.txt"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Polaria [Scripts Work]",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://paste.ee/r/HuRFEmpY"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Bombvest V1",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaGunsX/LuasLegacyScripts/refs/heads/main/%5BRecharacter%5D%20Bomb%20Vest"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Bombvest V2",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ProBypasserHax1/Ussjzbwusbdlq/refs/heads/main/Luafile33Xc3eww"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Thomas Engine Remake",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://pastefy.app/jTvSKOGh/raw"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Ronald McDonald's",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Spooky-Scary-MCDonalds-Script-28270"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Minecraft Steve",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Test4267/steve/refs/heads/main/rare"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Lua Hammer",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Prison-Life-Lua-Hammer-18934"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "1x1x1x1 Gui",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/MrWitzbold/1x1x1x1-Gui/refs/heads/main/main.lua"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Elysian 2.0 GUI",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/MrWitzbold/Elysian-2.0-GUI/refs/heads/main/main.lua"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Bill Cipher GUI",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/MrWitzbold/Bill-Cipher-GUI/refs/heads/main/main.lua"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "MLG Particles",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/ZPzjyL1M"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Big Smoke",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaGunsX/LuasLegacyScripts/refs/heads/main/%5BRecharacter%5D%20Big%20Smoke"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "c00l gui",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaGunsX/LuasLegacyScripts/refs/heads/main/%5BGUI%5D%20c00lgui"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Grab Knife V3",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaGunsX/LuasLegacyScripts/refs/heads/main/%5BRecharacter%5D%20Grab%20Knife%20V3"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Grab Knife V4",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaGunsX/LuasLegacyScripts/refs/heads/main/%5BRecharacter%5D%20Grab%20Knife%20V4"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "John Doe",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaGunsX/LuasLegacyScripts/refs/heads/main/%5BRecharacter%5D%20John%20Doe"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Nyan Cat",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaGunsX/LuasLegacyScripts/refs/heads/main/%5BRecharacter%5D%20Nyan%20Kitty"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Raindrop Cloud",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaGunsX/LuasLegacyScripts/refs/heads/main/%5BCloud%5D%20Raindrop"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "RC7 Explorer",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaGunsX/LuasLegacyScripts/refs/heads/main/%5BGUI%5D%20RC7%20Explorer"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Control GUI",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaGunsX/LuasLegacyScripts/refs/heads/main/%5BGUI%5D%20Control"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "T0PK3K 0.8",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaGunsX/LuasLegacyScripts/refs/heads/main/%5BGUI%5D%20T0PK3K%200.8"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "T0PK3K 2.0",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaGunsX/LuasLegacyScripts/refs/heads/main/%5BGUI%5D%20T0PK3K%20V2"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "T0PK3K 3.0",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaGunsX/LuasLegacyScripts/refs/heads/main/%5BGUI%5D%20T0PK3K%20V3"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "1x1x1x1's Revenge",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaGunsX/LuasLegacyScripts/refs/heads/main/%5BServer%20Killer%5D%201x1x1x1's%20Revenge.txt"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Blackcell GUI",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaGunsX/LuasLegacyScripts/refs/heads/main/%5BGUI%5D%20Blackcell"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Bumper Car",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaGunsX/LuasLegacyScripts/refs/heads/main/%5BRecharacter%5D%20Bumper%20Car"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "7 Star Executor",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaGunsX/LuasLegacyScripts/refs/heads/main/%5BGUI%5D%207%20Star%20Executor"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Lazytown",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://pastefy.app/nctA0Qqk/raw"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Jeff the Killer Jumpscare",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Jeff-The-Killer-JumpScare-27384"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Rocky'2u Admin",
+    Interact = 'Click',
+    Callback = function()
+
+        str_srce = "14682300022" loadstring(game:GetObjects("rbxassetid://"..str_srce)[1].Source)()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "G00by Executor",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://pastefy.app/LgKOzHYy/raw"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Obunga Jumpscare",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://pastefy.app/ORe0fQ07/raw"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Young Sheldoni",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://pastefy.app/aHhaRiUM/raw"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Shedletsky",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://pastefy.app/9Gk1HLfI/raw"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Spookify",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://pastefy.app/OvBb8y2T/raw"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "RC7 Require",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://pastefy.app/jcLGW8c8/raw"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "RC7 Cloud",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://pastefy.app/veRlpuMC/raw"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Nebula Star Glitcher",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/j09BnGB3"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Fe Bypass GUI",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://pastefy.app/PA6e511j/raw"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Ro - Expolit 6.0",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-RoXploit-by-KrystalTeam-9328"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "R15 To R6",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-from-R15-to-R6-9639"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Spider - Bot",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/XNVWznPH"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "M00pkidd GUI [Private GUI]",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-m00pkidd-private-Gui-fanmade-by-B00GKIDZ-27372"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Mario.Exe",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/Ljz3fwU2"))()
+    end,
+})
+
+local XTraScriptsSection = ScriptsTab:CreateSection("More Scripts")
+
+ScriptsTab:CreateButton({
+    Name = "Secret Service Panel",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/MagnumIceCream/SecretServicePanel/6fefdf531e86404fb41b7812e7e84b69c7ea728f/ShakesSSP"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Secret Service Panel 2",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/MagnumIceCream/SecretServicePanel/6fefdf531e86404fb41b7812e7e84b69c7ea728f/ShakesSSP"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "FE Fighter By Gale",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-FE-Fighter-inspired-by-Gale-21557"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Super Private GUI By Anonymous",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/BDguUuUx"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "L00L X Superx GUI",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/Q02wdXef"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Super super duper private GUI by c00lkidd",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/nTCk1iMw"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Superx and L00L Private GUI",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/DmM6JmsH"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "L00L Super Duper Private GUI V3",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/1nM6pGVM"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Zombie",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet(('https://pastefy.app/w7KnPY70/raw'),true))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Narito",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/uacVtsWe"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Item Giver",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/AZVi2tuK"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "FE Bypass 2",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/swanhtetm/swanhtetm/refs/heads/main/Fe_Bypass_By_Goodrc7.txt"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Ban Hammer",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/nicolasbarbosa323/ban-hammer/refs/heads/main/ban"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Dex Explorer [Join group to use.]",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/MainTreeUhh/UniversalScript/main/KeylessDexExplorer"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Remote Finder V2",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/mxx3x/Remote-Finder-v2/refs/heads/main/Remote%20Finder%20v2"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Spectrum Star Glitcher",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/nicolasbarbosa323/SCPECTRUMGLITCHER/refs/heads/main/SpectrumG%20(1).txt"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Krystal Dance",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/nicolasbarbosa323/crytasl/refs/heads/main/Krystal%20Dance%20V2.lua.txt"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Ravenger Claws",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-ravenger-claws-9234"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Plasma Cutters",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Prison-Life-Xester-18937"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Green Tank",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/gitezgitgit/rare-scripts/refs/heads/main/Green%20Tank.txt",true))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Master Hands",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/gitezgitgit/rare-scripts/refs/heads/main/MasterHand.txt",true))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Goner",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/nicolasbarbosa323/crytasl/refs/heads/main/goner.lua.txt"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Vereus",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Roblox-VEREUS-monster-script-3746"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Kirito Blades",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/nicolasbarbosa323/the-angel/refs/heads/main/Kirito%20Blades.txt"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Server Admin",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/nicolasbarbosa323/crytasl/refs/heads/main/serveradmin.lua"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Kill Bot",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/nicolasbarbosa323/rare/refs/heads/main/killbot.lua"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Krystal Dance V3",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Nitro-GT/OxideReanim/refs/heads/main/KrystalDance3"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Noob Bat",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://pastefy.app/Dnifbxu1/raw"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Lightsaber",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://pastefy.app/bpIeO2df/raw"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "F3X",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:GetObjects("rbxassetid://6695644299")[1].Source)()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "UTG [Not by Fancykid]",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Ultimate-trolling-gui-15461"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Sin Dragon",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/gitezgitgit/Sin-Dragon/refs/heads/main/Sin%20Dragon.lua.txt", true))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Project 2044033514",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/gitezgitgit/Project-2044033514/refs/heads/main/Project%2044033514.lua.txt", true))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Dark Titan",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/Tf8zhZ4w"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "DreamGUI",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxScriptsBackups/Dreamybully/refs/heads/main/Dreams.txt", true))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Explosive Robot",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://pastefy.app/ebiRyCkx/raw"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Atlas",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://pastefy.app/tEvSVCAm/raw"))()
+    end,
+})
+
+
+ScriptsTab:CreateButton({
+
+    Name = "Sans",
+
+    Interact = 'Click',
+
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/PCeZC5MV"))()
+
+ end,
+
+})
+
+ScriptsTab:CreateButton({
+
+    Name = "Waifu",
+
+    Interact = 'Click',
+
+    Callback = function()
+        loadstring(game:HttpGet("https://pastefy.app/9CzncVhE/raw"))()
+
+ end,
+
+})
+
+ScriptsTab:CreateButton({
+
+    Name = "Pennywise",
+
+    Interact = 'Click',
+
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/A4f22qvS"))()
+
+ end,
+
+})
+
+ScriptsTab:CreateButton({
+
+    Name = "Bleach",
+
+    Interact = 'Click',
+
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/JnqiXkAw"))()
+
+ end,
+
+})
+
+ScriptsTab:CreateButton({
+    Name = "Oblivion",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/viFyY7Hv"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+
+    Name = "Big Murder",
+
+    Interact = 'Click',
+
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/AH4L5eA8"))()
+
+ end,
+
+})
+
+ScriptsTab:CreateButton({
+
+    Name = "Green Armor",
+
+    Interact = 'Click',
+
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/YnYMN8ER"))()
+
+ end,
+
+})
+
+ScriptsTab:CreateButton({
+
+    Name = "Bird Wings",
+
+    Interact = 'Click',
+
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/zm3e6eFT"))()
+
+ end,
+
+})
+
+ScriptsTab:CreateButton({
+
+    Name = "One Punch Man",
+
+    Interact = 'Click',
+
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/QySEAhP5"))()
+
+ end,
+
+})
+
+
+
+ScriptsTab:CreateButton({
+
+    Name = "Moon Rabit",
+
+    Interact = 'Click',
+
+    Callback = function()
+        loadstring(game:HttpGet("https://pastefy.app/R7QK0XA9/raw"))()
+
+ end,
+
+})
+
+ScriptsTab:CreateButton({
+
+    Name = "Archangel",
+
+    Interact = 'Click',
+
+    Callback = function()
+        loadstring(game:HttpGet("https://pastefy.app/feZhrmUD/raw"))()
+
+ end,
+
+})
+
+ScriptsTab:CreateButton({
+
+    Name = "Blood Harvester",
+
+    Interact = 'Click',
+
+    Callback = function()
+        loadstring(game:HttpGet("https://pastefy.app/vJhBkxwB/raw"))()
+
+ end,
+
+})
+
+ScriptsTab:CreateButton({
+
+    Name = "Holy Dragon",
+
+    Interact = 'Click',
+
+    Callback = function()
+        loadstring(game:HttpGet("https://pastefy.app/QsgceJCk/raw"))()
+
+ end,
+
+})
+
+ScriptsTab:CreateButton({
+
+    Name = "Scarlet",
+
+    Interact = 'Click',
+
+    Callback = function()
+        loadstring(game:HttpGet("https://pastefy.app/fP8xhhB8/raw"))()
+
+ end,
+
+})
+
+ScriptsTab:CreateButton({
+
+    Name = "Purest",
+
+    Interact = 'Click',
+
+    Callback = function()
+        loadstring(game:HttpGet("https://pastefy.app/XPVixWqt/raw"))()
+
+ end,
+
+})
+
+ScriptsTab:CreateButton({
+
+    Name = "Sanctest",
+
+    Interact = 'Click',
+
+    Callback = function()
+        loadstring(game:HttpGet("https://pastefy.app/0zM1pk1f/raw"))()
+
+ end,
+
+})
+
+ScriptsTab:CreateButton({
+
+    Name = "Ryuneko",
+
+    Interact = 'Click',
+
+    Callback = function()
+        loadstring(game:HttpGet("https://pastefy.app/f4mWeQHo/raw"))()
+
+ end,
+
+})
+
+ScriptsTab:CreateButton({
+
+    Name = "Flash",
+
+    Interact = 'Click',
+
+    Callback = function()
+        loadstring(game:HttpGet("https://pastefy.app/mfUQMb2O/raw"))()
+
+ end,
+
+})
+
+local SwordsScriptsSection = ScriptsTab:CreateSection(" Sword Scripts")
+
+ScriptsTab:CreateButton({
+    Name = "Laser Sword",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://pastefy.app/HtWT5UVa/raw"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Death Sword",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/CUfphSLd"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Red Death Scythe",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/KPYbrH1C"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+
+    Name = "Attack on Titan Swords",
+
+    Interact = 'Click',
+
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/Hh1ghmb9"))()
+
+ end,
+
+})
+
+ScriptsTab:CreateButton({
+    Name = "Abyssal Sword",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://pastefy.app/QpPEFDpH/raw"))()
+    end,
+})
+
+
+ScriptsTab:CreateButton({
+    Name = "Dark Murderer",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/UQU0BB95"))()
+    end,
+})
+
+local GunsScriptsSection = ScriptsTab:CreateSection("Guns | Snipers")
+
+ScriptsTab:CreateButton({
+    Name = "M4A1 - S",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Idk-script-6-30278"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "AK47",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/sinret/rbxscript.com-scripts-reuploads-/main/ak47"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "AK74",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-AK74-5621"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "MLG Gun",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Client-Replication-the-ss-loadstring-script-27393"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Dev Uzi",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaGunsX/LuasLegacyScripts/refs/heads/main/%5BRecharacter%5D%20Dev%20Uzi"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Glock-17",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaGunsX/LuasLegacyScripts/refs/heads/main/%5BRecharacter%5D%20N3XUL's%20Glock-17"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Dual Pink Guns",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-dual-pink-guns-9235"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Laser Gun",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/DxCuMin9"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "DB Shotgun",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://pastefy.app/1RhJtgDi/raw"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "PipeBomb Launcher",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/gitezgitgit/rare-scripts/refs/heads/main/PipeBomb%20Launcher.txt"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "AWP [Sniper]",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://pastefy.app/Dnifbxu1/raw"))()
+    end,
+})
+
+
+local CoilScriptsSection = ScriptsTab:CreateSection("Coil Scripts")
+
+ScriptsTab:CreateButton({
+    Name = "Gravity Coil",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ShutUpJamesTheLoser/GravityCoil/refs/heads/main/Script"))()
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Speed Coil",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ShutUpJamesTheLoser/SpeedCoil/refs/heads/main/Script"))()
+    end,
+})
+
+
+local VisionScriptsSection = ScriptsTab:CreateSection("16visionzX's Scripts")
+
+ScriptsTab:CreateButton({
+    Name = "Inject Stigma Logo",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://ghostplayer352.github.io/Authorization/"))()Ioad("1c4a538a8fe2489c30ee46dd7ee081e6")
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Inject Stigma Logo [B&W]",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://ghostplayer352.github.io/Authorization/"))()Ioad("fc518614c64bcacf4196fa2841b4a407")
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "Inject Dominant Executor Logo",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://ghostplayer352.github.io/Authorization/"))()Ioad("d6a3cee81b85cce5fe3d784933faa655")
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "V - Decal Part",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://ghostplayer352.github.io/Authorization/"))()Ioad("c7ef8c7dedb39e3ebbd472893aabfba6")
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "V - Hint",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://ghostplayer352.github.io/Authorization/"))()Ioad("58f07e98d70802e23e603ffc872b2eee")
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "V - Message",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://ghostplayer352.github.io/Authorization/"))()Ioad("bdc3d9e9458f4ddee0e20da01a376c5b")
+    end,
+})
+
+-- Existing Scripts (Maintaining Order)
+ScriptsTab:CreateButton({
+    Name = "V - Skybox",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://ghostplayer352.github.io/Authorization/"))()Ioad("3939439521399f0d509feeffc64845b0")
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "V - Particle Emitter",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://ghostplayer352.github.io/Authorization/"))()Ioad("2c0295f63c3199f38e7e7927e91f8ed8")
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "V - Music",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://ghostplayer352.github.io/Authorization/"))()Ioad("5a01e28f8d01deb3a06e00f5e2dd7269")
+    end,
+})
+
+ScriptsTab:CreateButton({
+    Name = "V - Disco",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://ghostplayer352.github.io/Authorization/"))()Ioad("b3e5e03115cac16fe4adc19bcc91eef0")
+    end,
+})
+
+
+-- Create Admin Tab
+local AdminTab = Window:CreateTab("Admin", "user")
+
+-- Admin Scripts Section
+local AdminScriptsSection = AdminTab:CreateSection("Admin Scripts")
+
+-- Buttons for Admin Scripts
+AdminTab:CreateButton({
+    Name = "Infinite Yield A",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source", true))()
+    end,
+})
+
+AdminTab:CreateButton({
+    Name = "Fedora A",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/alexx1212/fedoratoomutch/main/toomucth'))()
+    end,
+})
+
+AdminTab:CreateButton({
+    Name = "Krunox A",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Krunox-13336"))()
+    end,
+})
+
+AdminTab:CreateButton({
+    Name = "IOrb Verm A",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaGunsX/LuasLegacyScripts/refs/heads/main/%5BAdmin%5D%20iOrb%20Verm"))()
+    end,
+})
+
+AdminTab:CreateButton({
+    Name = "Infinity X Tablets A",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaGunsX/LuasLegacyScripts/refs/heads/main/%5BAdmin%5D%20Infinity%20X%20Tablets"))()
+    end,
+})
+
+AdminTab:CreateButton({
+    Name = "Infinite Way",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxScriptsBackups/H/refs/heads/main/Infinite_Way_06.txt", true))()
+    end,
+})
+
+-- Create Soonlkidd's FE GUI Tab
+local FE_Tab = Window:CreateTab("Soonlkidd's FE GUI", "Codesandbox")
+
+-- FE Scripts Section
+local FE_Section = FE_Tab:CreateSection("Soonlkidd's Scripts")
+
+-- FE Script Buttons
+FE_Tab:CreateButton({
+    Name = "Inject Stigma Logo",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://ghostplayer352.github.io/Authorization/"))()Ioad("4bd135dc6dc44fbca40cb1b5d31af611")
+    end,
+})
+
+-- FE Script Buttons
+FE_Tab:CreateButton({
+    Name = "Guest_999s0",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/MFyvPtEN"))()
+    end,
+})
+
+FE_Tab:CreateButton({
+    Name = "Polaria [Executor]",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://ghostplayer352.github.io/Authorization/"))()
+        Ioad("fd7334aa6fff7e114c6a4476b7f8d810")
+    end,
+})
+
+FE_Tab:CreateButton({
+    Name = "Young Shelon GUI",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/asrzS5Ha"))()
+    end,
+})
+
+FE_Tab:CreateButton({
+    Name = "Obama Jumpscare",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/fWiapqXJ"))()
+    end,
+})
+
+FE_Tab:CreateButton({
+    Name = "Dominater Executor",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/u97psnsQ"))()
+    end,
+})
+
+FE_Tab:CreateButton({
+    Name = "Exser",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/gitluau/luauexser/refs/heads/main/pHzp8uG1PO962o6qucrlP3AJy17eV3B.lua"))()
+    end,
+})
+
+FE_Tab:CreateButton({
+    Name = "T0PK3K 4.0",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/c-1-23/c-1-23/refs/heads/main/T0PK3K%204.0"))()
+    end,
+})
+
+local BackdoorTab = Window:CreateTab("Backdoor", "door-open")
+
+local BackdoorScriptsSection = BackdoorTab:CreateSection("Backdoor | SS")
+
+
+local ExecutorTab = Window:CreateTab("Executor", "terminal")
+
+local ExecutorSection = ExecutorTab:CreateSection("Executor")
+
+local ExecuteButton = ExecutorTab:CreateButton({
+   Name = "Arceus X",
+   Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
+   end,
+})
+
+local ExecuteButton = ExecutorTab:CreateButton({
+   Name = "Fluxus Coral",
+   Callback = function()
+            loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Fluxus-Coral-Remake-7112"))()
+   end,
+})
+
+local ExecuteButton = ExecutorTab:CreateButton({
+   Name = "Delta X Executor",
+   Callback = function()
+            loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Delta-X-Executor-10319"))()
+   end,
+})
+
+local OtherTab = Window:CreateTab("Others", "boxes")
+
+local OtherScriptsSection = OtherTab:CreateSection("Other Scripts")
+
+--Other Buttons
+OtherTab:CreateButton({
+    Name = "Delta Keyboard [Cracked]",
+    Interact = 'Click',
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Xxtan31/Ata/main/deltakeyboardcrack.txt", true))()
+    end,
+})
+
+-- Notify Success
+Rayfield:Notify({
+    Title = "Loaded",
+    Content = "Proximity Hub loaded successfully!",
+    Duration = 3,
+    Image = smile,
+    Actions = {
+        Ignore = {
+            Name = "Loadpro",
+            Callback = function()
+                print("Welcome!")
+            end
+        }
+    }
+})
+
+Rayfield:Notify({
+    Title = "Info",
+    Content = "Owner: 16visionzX | GodofLove076 | exotechv",
+    Duration = 3,
+    Image = smile,
+    Actions = {
+        Ignore = {
+            Name = "Owner Info",
+            Callback = function()
+                print("hi")
+            end
+        }
+    }
+})
