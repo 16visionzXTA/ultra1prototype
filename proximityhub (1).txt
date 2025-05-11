@@ -800,55 +800,35 @@ ScriptsTab:CreateButton({
 
 
 ScriptsTab:CreateButton({
-
     Name = "Sans",
-
     Interact = 'Click',
-
     Callback = function()
         loadstring(game:HttpGet("https://pastebin.com/raw/PCeZC5MV"))()
-
  end,
-
 })
 
 ScriptsTab:CreateButton({
-
     Name = "Waifu",
-
     Interact = 'Click',
-
     Callback = function()
         loadstring(game:HttpGet("https://pastefy.app/9CzncVhE/raw"))()
-
  end,
-
 })
 
 ScriptsTab:CreateButton({
-
     Name = "Pennywise",
-
     Interact = 'Click',
-
     Callback = function()
         loadstring(game:HttpGet("https://pastebin.com/raw/A4f22qvS"))()
-
  end,
-
 })
 
 ScriptsTab:CreateButton({
-
     Name = "Bleach",
-
     Interact = 'Click',
-
     Callback = function()
         loadstring(game:HttpGet("https://pastebin.com/raw/JnqiXkAw"))()
-
  end,
-
 })
 
 ScriptsTab:CreateButton({
@@ -860,174 +840,109 @@ ScriptsTab:CreateButton({
 })
 
 ScriptsTab:CreateButton({
-
     Name = "Big Murder",
-
     Interact = 'Click',
-
     Callback = function()
         loadstring(game:HttpGet("https://pastebin.com/raw/AH4L5eA8"))()
-
  end,
-
 })
 
 ScriptsTab:CreateButton({
-
     Name = "Green Armor",
-
     Interact = 'Click',
-
     Callback = function()
         loadstring(game:HttpGet("https://pastebin.com/raw/YnYMN8ER"))()
-
  end,
-
 })
 
 ScriptsTab:CreateButton({
-
     Name = "Bird Wings",
-
     Interact = 'Click',
-
     Callback = function()
         loadstring(game:HttpGet("https://pastebin.com/raw/zm3e6eFT"))()
-
  end,
-
 })
 
 ScriptsTab:CreateButton({
-
     Name = "One Punch Man",
-
     Interact = 'Click',
-
     Callback = function()
-        loadstring(game:HttpGet("https://pastebin.com/raw/QySEAhP5"))()
-
+     loadstring(game:HttpGet("https://pastebin.com/raw/QySEAhP5"))()
  end,
-
 })
 
 
 
 ScriptsTab:CreateButton({
-
     Name = "Moon Rabit",
-
     Interact = 'Click',
-
     Callback = function()
         loadstring(game:HttpGet("https://pastefy.app/R7QK0XA9/raw"))()
-
  end,
-
 })
 
 ScriptsTab:CreateButton({
-
     Name = "Archangel",
-
     Interact = 'Click',
-
     Callback = function()
         loadstring(game:HttpGet("https://pastefy.app/feZhrmUD/raw"))()
-
  end,
-
 })
 
 ScriptsTab:CreateButton({
-
     Name = "Blood Harvester",
-
     Interact = 'Click',
-
     Callback = function()
         loadstring(game:HttpGet("https://pastefy.app/vJhBkxwB/raw"))()
-
  end,
-
 })
 
 ScriptsTab:CreateButton({
-
     Name = "Holy Dragon",
-
     Interact = 'Click',
-
     Callback = function()
         loadstring(game:HttpGet("https://pastefy.app/QsgceJCk/raw"))()
-
  end,
-
 })
 
 ScriptsTab:CreateButton({
-
     Name = "Scarlet",
-
     Interact = 'Click',
-
     Callback = function()
         loadstring(game:HttpGet("https://pastefy.app/fP8xhhB8/raw"))()
-
  end,
-
 })
 
 ScriptsTab:CreateButton({
-
     Name = "Purest",
-
     Interact = 'Click',
-
     Callback = function()
         loadstring(game:HttpGet("https://pastefy.app/XPVixWqt/raw"))()
-
  end,
-
 })
 
 ScriptsTab:CreateButton({
-
     Name = "Sanctest",
-
     Interact = 'Click',
-
     Callback = function()
         loadstring(game:HttpGet("https://pastefy.app/0zM1pk1f/raw"))()
-
  end,
-
 })
 
 ScriptsTab:CreateButton({
-
     Name = "Ryuneko",
-
     Interact = 'Click',
-
     Callback = function()
         loadstring(game:HttpGet("https://pastefy.app/f4mWeQHo/raw"))()
-
  end,
-
 })
 
 ScriptsTab:CreateButton({
-
     Name = "Flash",
-
     Interact = 'Click',
-
     Callback = function()
         loadstring(game:HttpGet("https://pastefy.app/mfUQMb2O/raw"))()
-
  end,
-
 })
 
 local SwordsScriptsSection = ScriptsTab:CreateSection(" Sword Scripts")
@@ -1057,16 +972,11 @@ ScriptsTab:CreateButton({
 })
 
 ScriptsTab:CreateButton({
-
     Name = "Attack on Titan Swords",
-
     Interact = 'Click',
-
     Callback = function()
         loadstring(game:HttpGet("https://pastebin.com/raw/Hh1ghmb9"))()
-
  end,
-
 })
 
 ScriptsTab:CreateButton({
@@ -1175,26 +1085,6 @@ ScriptsTab:CreateButton({
         loadstring(game:HttpGet("https://pastefy.app/Dnifbxu1/raw"))()
     end,
 })
-
-
-local CoilScriptsSection = ScriptsTab:CreateSection("Coil Scripts")
-
-ScriptsTab:CreateButton({
-    Name = "Gravity Coil",
-    Interact = 'Click',
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/ShutUpJamesTheLoser/GravityCoil/refs/heads/main/Script"))()
-    end,
-})
-
-ScriptsTab:CreateButton({
-    Name = "Speed Coil",
-    Interact = 'Click',
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/ShutUpJamesTheLoser/SpeedCoil/refs/heads/main/Script"))()
-    end,
-})
-
 
 local VisionScriptsSection = ScriptsTab:CreateSection("16visionzX's Scripts")
 
@@ -1327,16 +1217,8 @@ AdminTab:CreateButton({
     end,
 })
 
-AdminTab:CreateButton({
-    Name = "Infinite Way",
-    Interact = 'Click',
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxScriptsBackups/H/refs/heads/main/Infinite_Way_06.txt", true))()
-    end,
-})
-
 -- Create Soonlkidd's FE GUI Tab
-local FE_Tab = Window:CreateTab("Soonlkidd's FE GUI", "Codesandbox")
+local FE_Tab = Window:CreateTab("Soonlkidd's FE GUI", "codesandbox")
 
 -- FE Scripts Section
 local FE_Section = FE_Tab:CreateSection("Soonlkidd's Scripts")
@@ -1408,9 +1290,11 @@ FE_Tab:CreateButton({
     end,
 })
 
-local BackdoorTab = Window:CreateTab("Backdoor", "door-open")
+local BackdoorTab = Window:CreateTab("Backdoor", "door-closed")
 
 local BackdoorScriptsSection = BackdoorTab:CreateSection("Backdoor | SS")
+
+BackdoorTab:CreateLabel("Backdoor Scripts Coming Soon!")
 
 
 local ExecutorTab = Window:CreateTab("Executor", "terminal")
